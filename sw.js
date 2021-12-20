@@ -4,9 +4,11 @@ const assets = [
   "/index.html",
   "/css/styles.css",
   "/js/app.js",
+  "/manifest.json"
  
 ];
-
+var Servicenumber;
+Servicenumber++;
 
 
 self.addEventListener("install", installEvent => {
@@ -37,8 +39,7 @@ self.addEventListener("fetch", event => {
   );
 })
 
-var Servicenumber =0;
-Servicenumber++;
+
 
 const expectedCaches=["dev-coffee-site-v1"];
 
