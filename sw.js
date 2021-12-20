@@ -7,8 +7,6 @@ const assets = [
  
 ];
 
-var Servicenumber =0;
-Servicenumber++;
 
 
 self.addEventListener("install", installEvent => {
@@ -38,6 +36,9 @@ self.addEventListener("fetch", event => {
       .catch(console.log)
   );
 })
+
+var Servicenumber =0;
+Servicenumber++;
 
 const expectedCaches=["dev-coffee-site-v1"];
 
