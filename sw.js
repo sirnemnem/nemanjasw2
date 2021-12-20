@@ -14,7 +14,7 @@ const assets = [
   "/images/coffee7.jpg",
   "/images/coffee8.jpg",
   "/images/coffee9.jpg",
-  
+
 
  
 ];
@@ -59,7 +59,7 @@ self.addEventListener("install", event => {
   caches.delete("dev-coffee-site-v1");
   //console.log("old cache deleted");
   caches.open(staticDevCoffee).then(cache => {
-    cache.addAll(assets)
+    cache.addAll(assets);
   })
   
 
